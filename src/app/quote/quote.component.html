@@ -1,0 +1,12 @@
+h1>My Goals</h1>
+<hr>
+
+<ul>
+    <div *ngFor='let quote of Quote'>
+        <li >{{quote.name}}</li> 
+        <button  (click)='toogleDetails(i)'>Toogle Details</button>
+
+        <app-quote-details *ngIf="quote.showPerson" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
+    </div>
+</ul>
+<p *ngIf='quote.length > 5'>You have too many goals</p>

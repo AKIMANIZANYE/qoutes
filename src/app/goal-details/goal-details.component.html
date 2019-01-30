@@ -1,0 +1,30 @@
+
+
+
+
+ <p>Inspiration and motivation  Quotes for women!
+</p>
+
+<p>Quote:{{goal.quote}}</p>
+
+ 
+
+
+<p>Author: {{goal.author}}</p>
+
+<p>Date: {{goal.completeDate|date|uppercase}}</p>
+<p>upvote :{{goal.upvote}}</p>
+<p>Downvote :{{goal.downvote}}</p>
+<p>Submitted by:{{goal.username}}</p>
+
+<div id="btnUp">
+    <button (click)='upvote()' class="btn btn-success">Upvote</button>
+    <button (click)='downvote()' class="btn btn-warning" id="dwnVote">Downvote</button>
+   <button (click)= 'goalComplete(true)' class=" btn btn-danger " id="delete">Delete</button>
+</div>
+<p id="subdate"> posted: {{goal.completeDate|dateCount}}  days</p>
+
+
+
+
+<!-- <button   class="btn btn-danger" (click) = 'goalDelete(true)'> Delete Quote </button>  -->

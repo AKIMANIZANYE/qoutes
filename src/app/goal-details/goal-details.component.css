@@ -1,0 +1,11 @@
+P{
+    font-size: 20px;
+    font-family: Helvetica;
+}
+body{
+    background-color: grey;
+}
+p{
+    font-style: italic;
+    color:white;
+}
